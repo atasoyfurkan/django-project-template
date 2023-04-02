@@ -1,0 +1,4 @@
+<form action="{% url 'songs:song' %}" method="post">
+    {% csrf_token %}
+    {{ formset }}
+</form>
